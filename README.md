@@ -1,9 +1,8 @@
 # Design pattern
-这里以最简单的案例记录通俗易懂的部分java设计模式:thumbsup::thumbsup::thumbsup: 其它设计模式待后续有空添加~~ :poultry_leg::poultry_leg::poultry_leg:
-目前包括： 单例模式、Builder模式、观察者模式、代理模式。
+ 
  
 
-### 1、singleton pattern（单例模式）
+### 一、singleton pattern（单例模式）
 
 > 懒汉与恶汉单例模式因为缺陷明显实际运用上很少，便不再列举这里使用双重校验单例模式：
 ```java
@@ -40,7 +39,7 @@ class MyUtils {
 ```
  
 
-### 2、singleton pattern（builder模式）
+### 二、singleton pattern（builder模式）
 > 这里列举常用的链式掉用的builder模式，在android才用这种模式的典型案例AlertDialog：
  ```java
     new AlertDialog.Builder(this)
@@ -120,7 +119,7 @@ Person mPerson=new Person.Builder("阿三")
         .build();
 ```
 
-### 3、observer pattern（观察者模式）
+### 三、observer pattern（观察者模式）
 >当对象间存在一对多关系时则使用观察者模式. 一个对象被修改时，则会自动通知依赖它的对象。
 这里以学生老师做比喻 观察者是学生有多个，被观察的对象是老师。 老师布置作业后所有的学生将会收到通知开始做作业。
 
@@ -200,7 +199,7 @@ public class Teacher {
 
  
 
-### 4、proxy pattern（代理模式）
+### 四、proxy pattern（代理模式）
 >使用代理模式主要有两个目的：
  一是保护目标对象，不直接操作功能类UserImpl，让其功能更加纯粹。
  二是增强目标对象功能：给实际功能类UserImpl，套一个中介UserProxy类 提供额外的其它功能。
