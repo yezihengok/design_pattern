@@ -39,7 +39,7 @@ class MyUtils {
 ```
  
 
-### 二、singleton pattern（builder模式）
+### 二、builder pattern（builder建造者模式）
 > 这里列举常用的链式掉用的builder模式，在android才用这种模式的典型案例AlertDialog：
  ```java
     new AlertDialog.Builder(this)
