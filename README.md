@@ -7,7 +7,7 @@
 > 懒汉与恶汉单例模式因为缺陷明显实际运用上很少，便不再列举这里使用双重校验单例模式：
 ```java
 /**双重校验 的单例模式
- * Created by yzh on 2021/7/1 16:34.
+ * Created by yzh on 2020/7/1 16:34.
  */
 class MyUtils {
     private volatile static MyUtils singleton;
@@ -53,7 +53,7 @@ builder模式实现：
 ```java
 /**
  *一个类的构造函数参数较多，而且这些参数有些是必传与非必传的参数时，考虑这种使用构造者模式。可以按需添加属性
- * Created by yzh on 2021/7/1 16:08.
+ * Created by yzh on 2020/7/1 16:08.
  */
 class Person {
     //1、定义属性
@@ -127,7 +127,7 @@ Person mPerson=new Person.Builder("阿三")
 ```java
 /**
  * 抽象观察者Observer
- * Created by yzh on 2021/7/1 15:18.
+ * Created by yzh on 2020/7/1 15:18.
  */
 interface Observer {
     void doHomeWork(int i);
